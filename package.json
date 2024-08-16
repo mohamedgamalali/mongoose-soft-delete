@@ -1,8 +1,12 @@
 {
-  "name": "mongoose-soft-delete",
+  "name": "mongoose-soft-delete-orm",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamedgamalali/mongoose-soft-delete.git"
+  },
   "scripts": {
     "test": "jest --silent",
     "build": "tsc",
@@ -19,10 +23,6 @@
     "mongoose soft delete nestjs"
   ],
   "author": "Mohamed Gamal",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "license": "ISC",
   "description": "",
   "devDependencies": {
