@@ -10,7 +10,8 @@
   "scripts": {
     "test": "jest --silent",
     "build": "tsc",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "postinstall": "node ./scripts/overwrite-mongoose"
   },
   "keywords": [
     "mongoose",
