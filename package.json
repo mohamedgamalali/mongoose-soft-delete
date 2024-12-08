@@ -1,8 +1,8 @@
 {
   "name": "mongoose-soft-delete-orm",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "1.0.3",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/mohamedgamalali/mongoose-soft-delete.git"
@@ -11,7 +11,7 @@
     "test": "jest --silent",
     "build": "tsc",
     "prepare": "npm run build",
-    "postinstall": "node ./scripts/overwrite-mongoose"
+    "postinstall": "node ./dist/src/scripts/overwrite-mongoose.js"
   },
   "keywords": [
     "mongoose",

@@ -17,10 +17,12 @@
     "types": ["node", "jest"],
     "typeRoots": ["./node_modules/@types"],
     "strictPropertyInitialization": false,
-    "baseUrl": ".", // Sets the base directory for relative paths in this tsconfig
+    "baseUrl": "./src", // Sets the base directory for relative paths in this tsconfig
     "paths": {
-      "@db/mongoose-customs": ["./mongoose-customs"] // Alias for your mongoose-customs.ts
-    }
+      "@db/mongoose-customs": ["./src/mongoose-customs"] // Alias for your mongoose-customs.ts
+    },
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
   },
   "include": ["/**/*"],
   "exclude": ["**/*.test.+(ts|js)", "**/*.spec.ts", "mocks/*", "local/*", "./dist/*", "scripts/*"]
